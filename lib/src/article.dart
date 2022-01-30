@@ -107,4 +107,11 @@ final List<Article> articles = [
       age: '17 Hours',
       score: 77,
       commentsCount: 43),
+  Article(
+      text: 'Git diff branch Title',
+      domain: 'dart.dev.com',
+      by: 'dartpad',
+      age: '27 Hours',
+      score: 37,
+      commentsCount: 53),
 ];
