@@ -93,4 +93,11 @@ final List<Article> articles = [
       age: '3 Hours',
       score: 177,
       commentsCount: 83),
+  Article(
+      text: 'Git branch Title',
+      domain: 'github.com',
+      by: 'cctv',
+      age: '6 Hours',
+      score: 577,
+      commentsCount: 93),
 ];
