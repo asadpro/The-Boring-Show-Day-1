@@ -100,4 +100,11 @@ final List<Article> articles = [
       age: '6 Hours',
       score: 577,
       commentsCount: 93),
+  Article(
+      text: 'New branch Title',
+      domain: 'docs.flutter.com',
+      by: 'flutter',
+      age: '17 Hours',
+      score: 77,
+      commentsCount: 43),
 ];
