@@ -22,23 +22,49 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData.dark(),
       home: SafeArea(
         child: Scaffold(
-            appBar: AppBar(
-              title: Text('The boring show'),
-              centerTitle: true,
-            ),
-            body: RefreshIndicator(
-              onRefresh: () async {
-                await Future.delayed(
-                  Duration(seconds: 2),
-                );
-                setState(() {
-                  _article.removeAt(0);
-                });
-              },
-              child: SingleChildScrollView(
-                child: Column(children: _article.map(_buildItem).toList()),
+          appBar: AppBar(
+            title: Text('The boring show'),
+            centerTitle: true,
+          ),
+          // body: RefreshIndicator(
+          //   onRefresh: () async {
+          //     await Future.delayed(
+          //       Duration(seconds: 2),
+          //     );
+          //     setState(() {
+          //       _article.removeAt(0);
+          //     });
+          //   },
+          //   child: SingleChildScrollView(
+          //     child: Column(children: _article.map(_buildItem).toList()),
+          //   ),
+          // ),
+          body: Center(
+            child: IntrinsicWidth(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Container(
+                    color: Colors.red,
+                    height: 156.0,
+                    width: 50.0,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    height: 56.0,
+                    width: 90.0,
+                  ),
+                  Container(
+                    color: Colors.blue,
+                    height: 96.0,
+                    width: 20.0,
+                  ),
+                ],
               ),
-            )),
+            ),
+          ),
+        ),
       ),
     );
   }
