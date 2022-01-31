@@ -114,11 +114,4 @@ final List<Article> articles = [
       age: '27 Hours',
       score: 37,
       commentsCount: 53),
-  Article(
-      text: 'Git commit --amend Title',
-      domain: 'dart.dev.com',
-      by: 'dartpad',
-      age: '27 Hours',
-      score: 37,
-      commentsCount: 53),
 ];
