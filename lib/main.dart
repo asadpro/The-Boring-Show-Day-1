@@ -63,6 +63,10 @@ class _MyAppState extends State<MyApp> {
                 article.commentsCount.toString(),
                 textScaleFactor: 2.0,
               ),
+              Text(
+                article.commentsCount.toString(),
+                textScaleFactor: 2.0,
+              ),
               IconButton(
                   onPressed: () {
                     launch('https://flutterawesome.com/');
